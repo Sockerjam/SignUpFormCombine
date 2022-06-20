@@ -1,20 +1,22 @@
 //
 //  ContentView.swift
-//  SignUpFormCombine
+//  CombinePlay
 //
-//  Created by Niclas Jeppsson on 20/06/2022.
+//  Created by Niclas Jeppsson on 18/06/2022.
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        UserSignUpView()
+
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Content_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

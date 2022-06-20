@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9230FBF62860F35D00EB7967 /* SignUpFormCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230FBF52860F35D00EB7967 /* SignUpFormCombineApp.swift */; };
-		9230FBF82860F35D00EB7967 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230FBF72860F35D00EB7967 /* ContentView.swift */; };
 		9230FBFA2860F35D00EB7967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9230FBF92860F35D00EB7967 /* Assets.xcassets */; };
 		9230FBFD2860F35D00EB7967 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9230FBFC2860F35D00EB7967 /* Preview Assets.xcassets */; };
+		9230FC042860F38000EB7967 /* SignUpFormCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230FC032860F38000EB7967 /* SignUpFormCombine.swift */; };
+		9230FC062860F38B00EB7967 /* UserSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230FC052860F38B00EB7967 /* UserSignUpViewModel.swift */; };
+		9230FC092860F39200EB7967 /* UserSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230FC072860F39200EB7967 /* UserSignUpView.swift */; };
+		9230FC0A2860F39200EB7967 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230FC082860F39200EB7967 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9230FBF22860F35D00EB7967 /* SignUpFormCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpFormCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9230FBF52860F35D00EB7967 /* SignUpFormCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormCombineApp.swift; sourceTree = "<group>"; };
-		9230FBF72860F35D00EB7967 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9230FBF92860F35D00EB7967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9230FBFC2860F35D00EB7967 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9230FC032860F38000EB7967 /* SignUpFormCombine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFormCombine.swift; sourceTree = "<group>"; };
+		9230FC052860F38B00EB7967 /* UserSignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignUpViewModel.swift; sourceTree = "<group>"; };
+		9230FC072860F39200EB7967 /* UserSignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignUpView.swift; sourceTree = "<group>"; };
+		9230FC082860F39200EB7967 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		9230FBF42860F35D00EB7967 /* SignUpFormCombine */ = {
 			isa = PBXGroup;
 			children = (
-				9230FBF52860F35D00EB7967 /* SignUpFormCombineApp.swift */,
-				9230FBF72860F35D00EB7967 /* ContentView.swift */,
+				9230FC032860F38000EB7967 /* SignUpFormCombine.swift */,
+				9230FC0B2860F39700EB7967 /* SignUpFormViewModel */,
+				9230FC0C2860F3A500EB7967 /* Views */,
 				9230FBF92860F35D00EB7967 /* Assets.xcassets */,
 				9230FBFB2860F35D00EB7967 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				9230FBFC2860F35D00EB7967 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9230FC0B2860F39700EB7967 /* SignUpFormViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9230FC052860F38B00EB7967 /* UserSignUpViewModel.swift */,
+			);
+			path = SignUpFormViewModel;
+			sourceTree = "<group>";
+		};
+		9230FC0C2860F3A500EB7967 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9230FC082860F39200EB7967 /* ContentView.swift */,
+				9230FC072860F39200EB7967 /* UserSignUpView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +121,7 @@
 				TargetAttributes = {
 					9230FBF12860F35D00EB7967 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -137,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9230FBF82860F35D00EB7967 /* ContentView.swift in Sources */,
-				9230FBF62860F35D00EB7967 /* SignUpFormCombineApp.swift in Sources */,
+				9230FC042860F38000EB7967 /* SignUpFormCombine.swift in Sources */,
+				9230FC092860F39200EB7967 /* UserSignUpView.swift in Sources */,
+				9230FC0A2860F39200EB7967 /* ContentView.swift in Sources */,
+				9230FC062860F38B00EB7967 /* UserSignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SignUpFormCombine/Preview Content\"";
@@ -283,6 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.niclasjeppsson.SignUpFormCombine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SignUpFormCombine/Preview Content\"";
